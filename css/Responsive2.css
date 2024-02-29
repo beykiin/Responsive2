@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navli{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkseagreen;
+    height: 60px;
+}
+.navli li a{
+    text-decoration: none;
+    font-weight: 800;
+}
+.navli li a:hover{
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    transition-duration: 1s;
+}
+@media screen and (max-width:700px) {
+    .navli{
+        display: block;
+        background-color: aliceblue;
+        height: 100%;
+        text-align: center;
+        line-height: 20px;
+    }
+    .navli li a{
+        color: black;
+    }
+    .navli li a:hover{
+        font-size: 20px;
+        background-color: black;
+        color: white;
+        transition-duration: 1s;
+    }
+}
